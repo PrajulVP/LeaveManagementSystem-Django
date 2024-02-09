@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    body{
+        background-color: rgb(0, 0, 0, 0.75);
+    }
+
+    nav {
+        height: 70px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        gap: 40px;
+        margin-top: 10px;
+    }
+
+    .links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        color: blue;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    table {
+        width: 1160px;
+        margin: auto;
+        margin-top: 50px;
+        background-color: rgba(189, 216, 225, 0.9);
+    }
+
+    tr {
+        height: 40px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div>
+            <h1>ABC SCHOOL</h1>
+        </div>
+        <div class="links">
+            <div><a href="/about">
+                    <h3>ABOUT</h3>
+                </a></div>
+            <div><a href="/contact">
+                    <h3>CONTACT</h3>
+                </a></div>
+        </div>
+    </nav>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th>Reason</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            {% for i in leaves %}
+            <tr>
+                <td>{{ i.reason }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.status }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+
+</html>

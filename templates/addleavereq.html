@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+        background-color: rgb(0, 0, 0, 0.75);
+    }
+
+        nav {
+            height: 60px;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 30px;
+            background-color: rgb(36, 36, 36);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+            gap: 40px;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: blue;
+        }
+
+        .container {
+            width: 600px;
+            height: 350px;
+            background-color: rgba(138, 160, 169, 0.9);
+            padding-left: 50px;
+            padding-top: 60px;
+            margin: auto;
+            margin-top: 100px;
+            line-height: 60px;
+        }
+
+        textarea {
+            height: 60px;
+            padding-left: 15px;
+            padding-top: 10px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        label{
+            font-size: 25px;
+        }
+
+        input{
+            margin-left: 10px;
+        }
+
+        button {
+            width: 180px;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(50, 50, 167);
+            color: white;
+            margin-top: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 150px;
+            margin-left: 20px;
+        }
+
+        .back {
+            width: 150px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div>
+            <h1>ABC SCHOOL</h1>
+        </div>
+        <div class="links">
+            <div><a href="/about"><h3>ABOUT</h3></a></div>
+            <div><a href="/contact"><h3>CONTACT</h3></a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+ 
+            <div class="buttons">
+                <div><button type="submit">Apply</button></div>
+    
+                <div><a href="/stdpage"><button class="back">&#129060; Back</button></a></div>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ABC School</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url('/static/images/wallpaper.jpg');
+    }
+
+    nav {
+        height: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav h1 {
+        font-size: 32px;
+        margin-top: 5px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-top: 15px;
+        gap: 40px;
+    }
+
+    .links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .links a:hover {
+        color: blue;
+    }
+
+    .contents {
+        display: flex;
+    }
+
+    .content {
+        max-width: 600px;
+        padding: 80px;
+        line-height: 30px;
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .content h1 {
+        font-size: 27px;
+        margin-bottom: 30px
+    }
+
+    .contact-form {
+        max-width: 500px;
+        padding: 80px;
+        margin: auto;
+    }
+
+    .contact-form h2{
+        font-size: 27px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        width: 400px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        height: 45px;
+        border: 2px solid #6f6f6f;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .email{
+        height: 35px;
+        width: 250px;
+        padding-left: 10px;
+        border: 2px solid #6f6f6f;
+    }
+
+    .contact-form textarea {
+        height: 120px;
+    }
+
+    .contact-form input[type="submit"] {
+        background-color: rgb(51, 176, 55);
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #2ccd34;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        height: auto;
+        padding: 25px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <nav>
+        <div>
+            <h1>ABC SCHOOL</h1>
+        </div>
+        <div class="links">
+            <div><a href="/about">
+                    <h3>ABOUT</h3>
+                </a></div>
+            <div><a href="/">
+                    <h3>HOME</h3>
+                </a></div>
+        </div>
+    </nav>
+
+    <div class="contents">
+        <div class="content">
+            <h1>Contact ABC School</h1>
+            <p>If you have any questions, feedback, or inquiries, please feel free to contact us using the details
+                below:
+            </p>
+            <p>Email: info@abcschool.com</p>
+            <p>Phone: +1234567890</p>
+            <p>Address: 123 School Street, Kochi, Kerala</p>
+            <p>Location: <a
+                    href="https://maps.app.goo.gl/QnUnhwV7B4MfoPa38">https://maps.app.goo.gl/QnUnhwV7B4MfoPa38</a>
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-inquiry" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" class="email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Inquiry">
+            </form>
+        </div>
+    </div>
+    
+    <footer>
+    <p>&copy; 2024 ABC School. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

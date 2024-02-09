@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0;
+        background-color: rgb(0, 0, 0, 0.75);
+    }
+
+    nav {
+        height: 80px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 30px;
+        background-color: rgb(36, 36, 36);
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        gap: 40px;
+        margin-top: -10px;
+    }
+
+    .links a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        color: blue;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 1000px;
+        height: 400px;
+        padding-left: 80px;
+        padding-top: 40px;
+        padding-right: 80PX;
+        margin-top: 60px;
+        background-color: rgba(138, 160, 169, 0.9);
+        margin-left: 180px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .buttons{
+        display: flex;
+        gap: 100px;
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        background-color: rgb(48, 48, 189);
+        color: white;
+        margin-left: 100px;
+        margin-top: 80px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+    <nav>
+        <div>
+            <h1>ABC SCHOOL</h1>
+        </div>
+        <div class="links">
+            <div><a href="/about">
+                    <h2>ABOUT</h2>
+                </a></div>
+            <div><a href="/contact">
+                    <h2>CONTACT</h2>
+                </a></div>
+            <div><a href="/teacher_logout/">
+                    <h2>LOGOUT</h2>
+                </a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Welcome {{ username }}!</h1>
+
+        <p>The teacher dashboard in a Django-based leave management system offers a centralized platform for teachers to
+            handle leave requests efficiently. It provides an overview of pending requests, allows filtering and search,
+            enables quick approval or rejection of requests, displays detailed request information, includes a calendar
+            view for scheduling, sends notifications, offers reporting and analytics, facilitates user management,
+            allows customization, and ensures secure access.</p>
+
+        <div class="buttons">
+            <div><a href="/viewstd"><button>View Students</button></a></div>
+            <div><a href="/viewreq"><button>View Requests</button></a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
