@@ -4,72 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Leave Management System - ABC School</title>
+    <title>Leave Management- About</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background: azure;
             margin: 0;
             padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
         }
 
         nav {
             height: 80px;
             padding-left: 80px;
             padding-right: 80px;
-            padding-top: 30px;
             background-color: rgb(36, 36, 36);
             color: white;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 30px;
         }
 
         .links {
             display: flex;
             justify-content: space-between;
-            margin-left: 30px;
-            gap: 40px;
+            align-items: center;
         }
 
         .links a {
             color: white;
             text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
         }
 
         .links a:hover {
-            color: blue;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-top: 5px;
+            color: #ADD8E6;
         }
 
         .about-section {
-            background: url('/static/images/wallpaper.jpg');
-            padding: 20px;
+            padding: 10px;
             background-color: #f9f9f9;
-            border-radius: 5px;
-            padding: 100px;
-            padding-top: 50px;
-            font-size: 18px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 1300px;
+            text-align: center;
         }
 
         .about-section h2 {
-            margin-top: 0;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
 
-        .about-section ul {
-            margin-bottom: 10px;
+        .about-section p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -87,50 +79,35 @@
 <body>
     <nav>
         <div>
-            <h1></h1>
+            <h1>CN High School</h1>
         </div>
         <div class="links">
-            <div><a href="/">
-                    <h3>HOME</h3>
-                </a></div>
-            <div><a href="/contact">
-                    <h3>CONTACT</h3>
-                </a></div>
+            <a href="/about">
+                <h3>About</h3>
+            </a>
+            <a href="/contact">
+                <h3>Contact</h3>
+            </a>
         </div>
     </nav>
 
     <div class="container">
-        <section class="about-section">
-            <h2>Purpose</h2>
-            <p>Efficiently manage employee leave requests, automate leave processes, and ensure compliance with company
-                policies and labor laws.</p>
+        <div class="about-section">
+            <h2>About CN High School</h2>
+            <p>CN High School is a prestigious educational institution committed to nurturing the academic, personal, and social development of our students. Situated in a vibrant community, our school provides a supportive and engaging environment where students can thrive and achieve their full potential.</p>
+            
+            <p>At CN High School, we offer a comprehensive curriculum designed to challenge and inspire students. From advanced placement courses to specialized programs in arts, sciences, and technology, we provide a diverse range of educational opportunities to meet the unique needs and interests of our students.</p>
 
-            <h2>Benefits</h2>
-            <ul>
-                <li>Increased efficiency and time savings.</li>
-                <li>Transparency and trust within the organization.</li>
-                <li>Improved accuracy of leave tracking.</li>
-                <li>Better planning for employee absences.</li>
-                <li>Higher employee satisfaction.</li>
-                <li>Cost savings through streamlined processes.</li>
-            </ul>
+            <p>Our dedicated faculty members are passionate educators who are committed to fostering a love of learning and helping students succeed. Through personalized instruction, mentorship, and extracurricular activities, we empower students to become critical thinkers, effective communicators, and responsible global citizens.</p>
 
-            <h2>Features</h2>
-            <ul>
-                <li>Leave request submission.</li>
-                <li>Leave approval workflow.</li>
-                <li>Leave balances and accruals tracking.</li>
-                <li>Calendar integration.</li>
-                <li>Customizable leave policies.</li>
-                <li>Reporting and analytics.</li>
-                <li>Self-service portals for employees.</li>
-                <li>Mobile accessibility for on-the-go leave management.</li>
-            </ul>
-        </section>
+            <p>Additionally, CN High School promotes a culture of inclusivity, diversity, and respect. We celebrate the unique backgrounds and perspectives of our students and strive to create a welcoming and inclusive community where all individuals feel valued and supported.</p>
+
+            <p>Join us at CN High School and embark on a transformative educational journey where excellence is achieved, passions are pursued, and futures are shaped.</p>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 ABC School. All rights reserved.</p>
+        <p>&copy; 2024 CN High School. All rights reserved.</p>
     </footer>
 </body>
 
